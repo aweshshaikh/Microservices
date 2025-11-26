@@ -1,6 +1,6 @@
 data "azurerm_client_config" "current" {}
 
-resource "akv" "Elearn_keyvault" {
+resource "azurerm_key_vault" "Elearn_keyvault" {
   for_each                    = var.key_vaults
   name                        = each.value.name
   location                    = each.value.location

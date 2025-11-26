@@ -1,4 +1,4 @@
-resource "az_stg_acct" "storage_account" {
+resource "azurerm_storage_account" "storage_account" {
   for_each                 = var.stgs
   
   name                     = each.value.name

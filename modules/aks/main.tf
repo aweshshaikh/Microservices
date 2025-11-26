@@ -1,4 +1,4 @@
-resource "aks" "aks" {
+resource "azurerm_kubernetes_cluster" "aks" {
   for_each = var.aks_clusters
 
   name                = each.value.name

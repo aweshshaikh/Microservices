@@ -1,4 +1,4 @@
-resource "az_sql_server" "sql_server" {
+resource "azurerm_mssql_server" "sql_server" {
   for_each                     = var.sql_servers
 
   name                         = each.value.name

@@ -1,4 +1,4 @@
-resource "az_sql_db" "sql_db" {
+resource "azurerm_mssql_database" "sql_db" {
   for_each     = var.sql_dbs
 
   name         = each.value.name
