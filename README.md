@@ -1,2 +1,2 @@
-# aks_microservice_generic_code
-for_each map &amp; dynamic
+# ACR_AKS_MICROSERVICES
+for_each with dynamic
