@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "ran_rg"
-    storage_account_name = "ranjeetsingh112"
-    container_name       = "ranjeetcontainer"
+     resource_group_name  = "rg-todo"
+    storage_account_name = "bckupstg"
+    container_name       = "acr"
     key                  = "dev.tfstate"
   }
 }

@@ -1,4 +1,4 @@
-resource "azurerm_public_ip" "public_ip" {
+resource "az_pip" "public_ip" {
   for_each            = var.public_ips
   
   name                = each.value.name

@@ -1,4 +1,4 @@
-resource "azurerm_container_registry" "acr" {
+resource "acr" "acr" {
   for_each           = var.acrs
 
   name                = each.value.name
